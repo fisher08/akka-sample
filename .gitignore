@@ -1,0 +1,11 @@
+.*
+_*
+.idea/
+tmp/
+target/
+log/
+site/
+project/
+*.iml
+
+*.license
