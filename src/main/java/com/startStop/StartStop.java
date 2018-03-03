@@ -1,4 +1,4 @@
-package startStop;
+package com.startStop;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;

@@ -1,4 +1,4 @@
-package cluster;
+package com.cluster;
 
 import akka.actor.ActorSystem;
 import akka.actor.Props;

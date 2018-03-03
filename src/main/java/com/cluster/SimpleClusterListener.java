@@ -1,4 +1,4 @@
-package cluster;
+package com.cluster;
 
 import akka.actor.UntypedActor;
 import akka.cluster.Cluster;
