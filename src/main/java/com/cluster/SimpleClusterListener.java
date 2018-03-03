@@ -49,6 +49,5 @@ public class SimpleClusterListener extends UntypedActor {
     } else {
       unhandled(message);
     }
-
   }
 }

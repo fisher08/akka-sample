@@ -9,6 +9,7 @@ import com.typesafe.config.ConfigFactory;
 public class SimpleClusterApp {
 
   public static void main(String[] args) {
+    System.out.println(args);
     if (args.length == 0)
       startup(new String[] { "2551", "2552", "0" });
     else
@@ -26,7 +27,9 @@ public class SimpleClusterApp {
       ActorSystem system = ActorSystem.create("ClusterSystem", config);
 
       // Create an actor that handles cluster domain events
-      system.actorOf(Props.create(SimpleClusterListener.class),
+//      system.actorOf(Props.create(SimpleClusterListener.class),
+//          "clusterListener");
+              system.actorOf(Props.create(SimpleClusterListener.class),
           "clusterListener");
     }
   }
